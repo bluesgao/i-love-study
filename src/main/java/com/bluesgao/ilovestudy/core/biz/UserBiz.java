@@ -1,7 +1,7 @@
-package com.bluesgao.ilovestudy.biz;
+package com.bluesgao.ilovestudy.core.biz;
 
-import com.bluesgao.ilovestudy.base.entity.User;
-import com.bluesgao.ilovestudy.base.service.UserService;
+import com.bluesgao.ilovestudy.core.entity.User;
+import com.bluesgao.ilovestudy.core.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.bluesgao.ilovestudy.base.entity;
+package com.bluesgao.ilovestudy.core.entity;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,6 +1,6 @@
-package com.bluesgao.ilovestudy.base.mapper;
+package com.bluesgao.ilovestudy.core.mapper;
 
-import com.bluesgao.ilovestudy.base.entity.User;
+import com.bluesgao.ilovestudy.core.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

@@ -1,8 +1,8 @@
-package com.bluesgao.ilovestudy.base.service;
+package com.bluesgao.ilovestudy.core.service;
 
 import com.alibaba.fastjson.JSON;
-import com.bluesgao.ilovestudy.base.entity.User;
-import com.bluesgao.ilovestudy.base.mapper.UserMapper;
+import com.bluesgao.ilovestudy.core.entity.User;
+import com.bluesgao.ilovestudy.core.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
