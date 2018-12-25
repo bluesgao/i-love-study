@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: gx123456
+      url: jdbc:mysql://47.97.205.190:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      initial-size: 1
+      max-active: 20
+      max-wait: 60000
+      min-idle: 1
+      filters: stat
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      validation-query: SELECT 'x'
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      max-pool-prepared-statement-per-connection-size: 20
+      pool-prepared-statements: true
+      stat-view-servlet:
+        allow:
+        deny: 128.242.127.1/24,128.242.128.1
+        enabled: true
+        login-password: admin
+        login-username: admin
+        reset-enable: true
+        url-pattern: /druid/*
+      web-stat-filter:
+        enabled: true
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+        principal-cookie-name: admin
+        principal-session-name: admin
+        profile-enable: true
+        session-stat-enable: false
+        session-stat-max-count: 1000
+        url-pattern: /*
+
+server:
+  port: 8080
+mybatis:
+  type-aliases-package: com.bluesgao.ilovestudy
+  mapper-locations: classpath:mapper/*.xml
+
+##开启sql+log日志
+##logging.leval+包名 (com.winterchen.dao)  +日志等级(debug)
+logging.level.com.bluesgao.ilovestudy.base.mapper: DEBUG
